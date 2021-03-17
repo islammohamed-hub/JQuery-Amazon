@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="js/registrationScript.js"></script>
+  <title>Amazon Sign-In</title>
+
+  <link rel="stylesheet" href="css/SignUp.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row row-cols-1">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <a href="Index.html">
+            <img src="img/amazonLogo.png" class="rounded" alt="Amazon.com" width="120px" height="70px" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="card">
+          <div class="card-body text-center">
+            <div>
+              <p id="SignInTxt">
+                <span>Sign In</span>
+              </p>
+            </div>
+            <div>
+              <form onsubmit="signIn(event)" action="Index.html" class="form-group">
+
+                <p><strong>Email Address</strong></p>
+                <input id="signInEmail" type="email" name="email" required class="form-control">
+
+                <br>
+
+                <label>
+                  <strong>Password</strong>
+                  <span><a href="#" id="password">Forgot your password?</a></span>
+                </label>
+                <input id="signInPassword" type="password" name="password" required class="form-control">
+
+                <br>
+
+                <div id="rongEPDiv" class="alert alert-danger" style="display: none;">
+                  <label>Email or Password is incorrect</label>
+                </div>
+
+                <div>
+                  <input type="submit" id="amazon" value="Sign in" class="btn btn-warning" style="width: 300px;">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div id="createAccount">
+          <h2><span>New to Amazon?</span></h2>
+          <a href="Registration.html">
+            <button class="btn btn-light" id="newAccount" name="newAcct">Create your Amazon account</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr id="footer">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <div class="extra">
+            <p class="links"><a href="#" id="first">Conditions of Use</a>
+              <a href="#">Notice of Use</a>
+              <a href="#">Help</a>
+            </p>
+            <p class="links" id="special">
+              © 2021, Amazon.com, Inc. or its affiliates
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
